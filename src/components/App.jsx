@@ -1,13 +1,12 @@
-import Statistics from './Statistics'
-import stats from '../../stats.json'
-import './App.css'
+import "../App.css";
+import Form from "./Form/Form";
 
-export const App = () => {
-  return (
-    <>
-      <Statistics stats={stats} title="Main Statistics"/>
-    </>
-  )
+function App() {
+  const submit = (e) => {
+    console.log(e);
+  };
+  return <Form submit={submit} />;
 }
 
 export default App;
+ 
